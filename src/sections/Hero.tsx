@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: 'center'
     },
     heroText: {
-      fontFamily: 'Regular'
+      fontFamily: 'Regular',
+      lineHeight: '4rem'
     },
     fancy: {
       color: theme.palette.primary.main,
@@ -58,7 +59,7 @@ export const Hero: React.FC<{}> = () => {
         <Container maxWidth="xs" style={{ position: 'relative' }}>
           <Paper className={classes.paper}>
             <Typography variant="h4" className={classes.heroText}>
-              A generative art collection of 2222{' '}
+              A collection of 2222 3D
               <span className={`${classes.fancy} ${classes.bigger}`}>K</span>
               ings and{' '}
               <span className={`${classes.fancy} ${classes.bigger}`}>Q</span>

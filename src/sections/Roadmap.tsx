@@ -15,12 +15,12 @@ const useStyles = makeStyles((theme: Theme) =>
     icon: {
       fontFamily: 'FCText',
       color: theme.palette.primary.main,
-      paddingTop: theme.spacing(2),
-      paddingBottom: theme.spacing(2)
+      paddingBottom: theme.spacing(3)
     },
     paper: {
       padding: theme.spacing(2),
-      marginTop: theme.spacing(5)
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(2)
     }
   })
 )
@@ -52,7 +52,7 @@ export const Roadmap: React.FC<{}> = () => {
       <SectionTitle text="Roadmap" />
 
       {timeline.map(({ dot, text }) => (
-        <Timeline align="right">
+        <Timeline key={dot} align="right">
           <TimelineItem>
             <TimelineSeparator>
               <Typography

@@ -37,7 +37,7 @@ export const SocialBar: React.FC<{
           } fab fa-telegram`}
         />
       </Link>
-      <Link href="https://twitter.com/solitairesNFT">
+      <Link href="https://twitter.com/SOLitairesNFT">
         <i
           className={`${classes.icon} ${
             size ? 'fa-' + size : ''

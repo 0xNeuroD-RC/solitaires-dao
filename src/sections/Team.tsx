@@ -72,7 +72,7 @@ export const Team: React.FC<{}> = () => {
           />
           <Link
             className={classes.link}
-            href="https://twitter.com/KingSolitaire"
+            href="https://twitter.com/SOLitairesNFT"
           >
             <Typography className={classes.name}>King Solitaire</Typography>{' '}
             <Icon className="fab fa-twitter text-blue" />
@@ -89,7 +89,10 @@ export const Team: React.FC<{}> = () => {
             Artist
           </Typography>
           <img className={classes.image} src={teamPlaceholder} alt="Artist" />
-          <Link className={classes.link} href="https://twitter.com/0xMMelvin">
+          <Link
+            className={classes.link}
+            href="https://twitter.com/SOLitairesNFT"
+          >
             <Typography className={classes.name}>Artist</Typography>{' '}
             <Icon className="fab fa-twitter text-blue" />
           </Link>
