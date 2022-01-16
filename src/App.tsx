@@ -3,11 +3,11 @@ import './App.css'
 import { ThemeProvider, createTheme } from '@material-ui/core'
 import { Container } from '@material-ui/core'
 import { Nav } from './components/Nav'
+import { About } from './sections/About'
+import { FAQ } from './sections/FAQ'
 import { Footer } from './sections/Footer'
 import { Hero } from './sections/Hero'
-import { About } from './sections/About'
 import { Roadmap } from './sections/Roadmap'
-import { FAQ } from './sections/FAQ'
 import { Team } from './sections/Team'
 
 const theme = createTheme({
