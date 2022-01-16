@@ -2,13 +2,14 @@ import './App.css'
 
 import { ThemeProvider, createTheme } from '@material-ui/core'
 import { Container } from '@material-ui/core'
-import { Nav } from './components/Nav'
-import { Footer } from './sections/Footer'
-import { Hero } from './sections/Hero'
-import { About } from './sections/About'
-import { Roadmap } from './sections/Roadmap'
-import { FAQ } from './sections/FAQ'
-import { Team } from './sections/Team'
+// import { Nav } from './components/Nav'
+// import { Footer } from './sections/Footer'
+// import { Hero } from './sections/Hero'
+// import { About } from './sections/About'
+// import { Roadmap } from './sections/Roadmap'
+// import { FAQ } from './sections/FAQ'
+// import { Team } from './sections/Team'
+import { Splash } from './components/Splash'
 
 const theme = createTheme({
   palette: {
@@ -29,7 +30,8 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="lg">
-        <Nav />
+        <Splash />
+        {/* <Nav />
         <Hero />
         <Container maxWidth="md">
           <About />
@@ -37,7 +39,7 @@ const App = () => {
           <FAQ />
           <Team />
         </Container>
-        <Footer />
+        <Footer /> */}
       </Container>
     </ThemeProvider>
   )
