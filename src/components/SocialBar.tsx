@@ -23,14 +23,14 @@ export const SocialBar: React.FC<{
 
   return (
     <div className={`${classes.social}`}>
-      <Link href="https://discord.gg/4NzpjHfU">
+      <Link href="https://discord.gg/4NzpjHfU" target="_blank">
         <i
           className={`${classes.icon} ${
             size ? 'fa-' + size : ''
           } fab fa-discord`}
         />
       </Link>
-      <Link href="https://twitter.com/SOLitairesNFT">
+      <Link href="https://twitter.com/SOLitairesNFT" target="_blank">
         <i
           className={`${classes.icon} ${
             size ? 'fa-' + size : ''

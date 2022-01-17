@@ -1,5 +1,11 @@
 import React from 'react'
-import { createStyles, Grid, makeStyles, Theme } from '@material-ui/core'
+import {
+  Button,
+  createStyles,
+  Grid,
+  makeStyles,
+  Theme
+} from '@material-ui/core'
 import { SocialBar } from './SocialBar'
 import { BrandLogo } from './BrandLogo'
 
@@ -7,6 +13,9 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     nav: {
       marginBottom: theme.spacing(10)
+    },
+    navButton: {
+      marginRight: theme.spacing(2)
     }
   })
 )
@@ -25,6 +34,15 @@ export const Nav: React.FC = () => {
     >
       <Grid item>
         <BrandLogo maxWidth="40%" />
+      </Grid>
+      <Grid item>
+        <Button
+          className={classes.navButton}
+          href="https://solitaires-dao.com"
+          target="_blank"
+        >
+          Mint
+        </Button>
       </Grid>
       <Grid item>
         <SocialBar size="2x" />
