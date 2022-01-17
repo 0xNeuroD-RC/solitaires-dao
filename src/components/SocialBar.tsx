@@ -30,13 +30,6 @@ export const SocialBar: React.FC<{
           } fab fa-discord`}
         />
       </Link>
-      <Link href="https://t.me/NFTArtMaster">
-        <i
-          className={`${classes.icon} ${
-            size ? 'fa-' + size : ''
-          } fab fa-telegram`}
-        />
-      </Link>
       <Link href="https://twitter.com/SOLitairesNFT">
         <i
           className={`${classes.icon} ${

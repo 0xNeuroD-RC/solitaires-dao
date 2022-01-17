@@ -68,7 +68,7 @@ export const Footer: FC = () => {
               Team
             </Link>
           </Grid>
-          <SocialBar />
+          <SocialBar size="2x" />
         </Grid>
       </Grid>
       <Box className={classes.createdBy}>
