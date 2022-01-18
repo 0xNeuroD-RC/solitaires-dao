@@ -6,7 +6,8 @@ import {
   Typography,
   createStyles,
   makeStyles,
-  Theme
+  Theme,
+  useMediaQuery
 } from '@material-ui/core'
 import king2 from '../assets/img/king-02.png'
 
@@ -19,6 +20,9 @@ const useStyles = makeStyles((theme: Theme) =>
     hero: {
       display: 'flex',
       alignItems: 'center'
+    },
+    gridItem: {
+      marginTop: `${theme.spacing(2)} !important`
     },
     heroText: {
       fontFamily: 'Regular',
@@ -39,6 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const Hero: React.FC<{}> = () => {
   const classes = useStyles()
+  const mq = useMediaQuery('(min-width: 1108px)')
 
   return (
     <Grid
@@ -49,16 +54,20 @@ export const Hero: React.FC<{}> = () => {
       justifyContent="center"
     >
       <Grid item>
-        <Container maxWidth="sm">
+        <Container maxWidth={mq ? 'sm' : 'md'} style={{ marginTop: '2rem' }}>
           <Paper className={classes.paper}>
             <img className={classes.image} src={king2} alt="King" />
           </Paper>
         </Container>
       </Grid>
       <Grid item>
-        <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <Container maxWidth={mq ? 'xs' : 'md'} style={{ marginTop: '2rem' }}>
           <Paper className={classes.paper}>
-            <Typography variant="h4" className={classes.heroText}>
+            <Typography
+              variant="h4"
+              className={classes.heroText}
+              align="center"
+            >
               A collection of 2222 3D
               <span className={`${classes.fancy} ${classes.bigger}`}>K</span>
               ings and{' '}

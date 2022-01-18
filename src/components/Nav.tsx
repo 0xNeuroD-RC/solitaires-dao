@@ -4,7 +4,8 @@ import {
   createStyles,
   Grid,
   makeStyles,
-  Theme
+  Theme,
+  useMediaQuery
 } from '@material-ui/core'
 import { SocialBar } from './SocialBar'
 import { BrandLogo } from './BrandLogo'
@@ -22,6 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const Nav: React.FC = () => {
   const classes = useStyles()
+  const mq = useMediaQuery('(min-width: 768px)')
 
   return (
     <Grid
@@ -33,7 +35,7 @@ export const Nav: React.FC = () => {
       className={classes.nav}
     >
       <Grid item>
-        <BrandLogo maxWidth="40%" />
+        <BrandLogo maxWidth={mq ? '40%' : '100%'} />
       </Grid>
       <Grid item>
         <Button

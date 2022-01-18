@@ -24,7 +24,7 @@ export const About: React.FC<{}> = () => {
     <Box id="about">
       <SectionTitle text="About the DAO" />
       <Paper className={classes.paper}>
-        <Typography align="justify">
+        <Typography align="center">
           The Solitaires are a collection of 2,222 King and Queen couples living
           on the Solana blockchain. We are the very first project to contribute
           100% of secondary royalties to our DAO. The DAO will have between

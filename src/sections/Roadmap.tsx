@@ -55,16 +55,16 @@ export const Roadmap: React.FC<{}> = () => {
 
       <Paper className={classes.paper}>
         <Typography className={classes.subheader} align="center" variant="h5">
-          You <span className={`${classes.fancy} ${classes.bigger}`}>K</span>
+          <span className={`${classes.fancy} ${classes.bigger}`}>K</span>
           ings and{' '}
           <span className={`${classes.fancy} ${classes.bigger}`}>Q</span> ueens
-          rule this{' '}
+          rule the{' '}
           <span className={`${classes.fancy} ${classes.bigger}`}>DAO</span>
         </Typography>
 
         <Divider className={classes.divider} />
 
-        <Typography className={classes.description} align="justify">
+        <Typography className={classes.description} align="center">
           We believe that the community should decide where their royalties go.
           We’ve seen many projects who promise many things continuosly fail.
           That’s why 100% of secondary funds will go to the DAO, thus giving the

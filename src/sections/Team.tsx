@@ -5,7 +5,8 @@ import {
   Theme,
   Link,
   Paper,
-  Box
+  Box,
+  useMediaQuery
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
@@ -23,11 +24,25 @@ const useStyles = makeStyles((theme: Theme) =>
     imageContainer: {
       margin: theme.spacing(3),
       padding: theme.spacing(3),
+      border: `1px solid ${theme.palette.primary.main}`,
+      '&:first-of-type': {
+        marginLeft: 0
+      },
+      '&:last-of-type': {
+        marginRight: 0
+      }
+    },
+    imageContainerSm: {
+      padding: theme.spacing(3),
+      marginTop: theme.spacing(3),
       border: `1px solid ${theme.palette.primary.main}`
     },
     image: {
       maxWidth: '100%',
       borderRadius: theme.spacing(1)
+    },
+    stack: {
+      flexWrap: 'wrap'
     },
     link: {
       display: 'flex',
@@ -41,22 +56,22 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: '1.5rem',
       fontWeight: 'bold'
     },
-    paper: {
-      padding: theme.spacing(2),
-      marginTop: theme.spacing(2)
-    }
+    paper: {}
   })
 )
 
 export const Team: React.FC<{}> = () => {
   const classes = useStyles()
+  const mq = useMediaQuery('(min-width: 900px)')
 
   return (
     <Box id="team">
       <SectionTitle text="Team" />
 
-      <Box className={classes.root}>
-        <Paper className={classes.imageContainer}>
+      <Box className={mq ? classes.root : classes.stack}>
+        <Paper
+          className={mq ? classes.imageContainer : classes.imageContainerSm}
+        >
           <Typography
             className={classes.position}
             variant="h4"
@@ -80,7 +95,9 @@ export const Team: React.FC<{}> = () => {
           </Link>
         </Paper>
 
-        <Paper className={classes.imageContainer}>
+        <Paper
+          className={mq ? classes.imageContainer : classes.imageContainerSm}
+        >
           <Typography
             className={classes.position}
             variant="h4"
@@ -100,7 +117,9 @@ export const Team: React.FC<{}> = () => {
           </Link>
         </Paper>
 
-        <Paper className={classes.imageContainer}>
+        <Paper
+          className={mq ? classes.imageContainer : classes.imageContainerSm}
+        >
           <Typography
             className={classes.position}
             variant="h4"
