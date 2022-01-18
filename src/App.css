@@ -1,3 +1,7 @@
+body {
+  background-color: #101d2c;
+}
+
 @font-face {
   font-family: Assassin;
   src: url(assets/fonts/Assassin$.ttf);
@@ -11,8 +15,4 @@
 @font-face {
   font-family: FCText;
   src: url(assets/fonts/Fancy\ Card\ Text.ttf);
-}
-
-.App {
-  text-align: center;
 }

@@ -74,7 +74,9 @@ export const FAQ: React.FC<{}> = () => {
           className={classes.collapse}
           onClick={() => openFaq(index, open[index])}
         >
-          <Typography className={classes.question}>{question}</Typography>
+          <Typography className={classes.question} align="center">
+            {question}
+          </Typography>
           {open[index] && (
             <Paper className={classes.paper}>
               <Typography>{answer}</Typography>

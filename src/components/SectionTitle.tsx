@@ -22,7 +22,12 @@ export const SectionTitle: React.FC<{ text: string }> = ({ text }) => {
 
   return (
     <Grid container direction="row" justifyContent="center">
-      <Typography className={classes.heading} variant="h2" color="primary">
+      <Typography
+        className={classes.heading}
+        variant="h2"
+        color="primary"
+        align="center"
+      >
         {text}
       </Typography>
     </Grid>

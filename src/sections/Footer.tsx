@@ -6,7 +6,8 @@ import {
   Theme,
   createStyles,
   Grid,
-  Box
+  Box,
+  useMediaQuery
 } from '@material-ui/core'
 import { BrandLogo } from '../components/BrandLogo'
 import { SocialBar } from '../components/SocialBar'
@@ -38,6 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const Footer: FC = () => {
   const classes = useStyles()
+  const mq = useMediaQuery('(min-width: 900px)')
 
   return (
     <Box id="footer">
@@ -49,7 +51,7 @@ export const Footer: FC = () => {
         justifyContent="space-between"
         wrap="nowrap"
       >
-        <BrandLogo maxWidth="30%" />
+        <BrandLogo maxWidth={mq ? '40%' : '50%'} />
         <Grid item>
           <Grid container direction="column">
             <Link className={classes.footerLink} href="#nav">
@@ -68,9 +70,10 @@ export const Footer: FC = () => {
               Team
             </Link>
           </Grid>
-          <SocialBar />
+          <SocialBar size="2x" />
         </Grid>
       </Grid>
+
       <Box className={classes.createdBy}>
         <Typography className={classes.createdBy} color={`primary`}>
           Created by <Link href="https://twitter.com/0xMMelvin">0xMMelvin</Link>
