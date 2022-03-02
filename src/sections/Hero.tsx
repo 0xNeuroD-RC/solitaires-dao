@@ -9,7 +9,7 @@ import {
   Theme,
   useMediaQuery
 } from '@material-ui/core'
-import king2 from '../assets/img/king-02.png'
+import king from '../assets/img/king.png'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -56,7 +56,7 @@ export const Hero: React.FC<{}> = () => {
       <Grid item>
         <Container maxWidth={mq ? 'sm' : 'md'} style={{ marginTop: '2rem' }}>
           <Paper className={classes.paper}>
-            <img className={classes.image} src={king2} alt="King" />
+            <img className={classes.image} src={king} alt="King" />
           </Paper>
         </Container>
       </Grid>

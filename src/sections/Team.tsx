@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
-import teamPlaceholder from '../assets/img/king-01.png'
+import teamPlaceholder from '../assets/img/king.png'
 import { SectionTitle } from '../components/SectionTitle'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -128,14 +128,10 @@ export const Team: React.FC<{}> = () => {
           >
             Lead Dev
           </Typography>
-          <img
-            className={classes.image}
-            src={teamPlaceholder}
-            alt="0xMMelvin"
-          />
+          <img className={classes.image} src={teamPlaceholder} alt="0xNeuroD" />
           <Link
             className={classes.link}
-            href="https://twitter.com/0xMMelvin"
+            href="https://twitter.com/0xNeuroD"
             target="_blank"
           >
             <Typography className={classes.name}>0xMMelvin</Typography>{' '}

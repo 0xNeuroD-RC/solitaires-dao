@@ -1,18 +1,27 @@
 body {
-  background-color: #101d2c;
+    background: radial-gradient(circle, #330a08 40%, #000);
+}
+
+i:hover {
+    color: #fff;
+}
+
+.MuiPaper-root {
+    background-color: #250a08 !important;
+    border: 1px solid #c29947;
 }
 
 @font-face {
-  font-family: Assassin;
-  src: url(assets/fonts/Assassin$.ttf);
+    font-family: Assassin;
+    src: url(assets/fonts/Assassin$.ttf);
 }
 
 @font-face {
-  font-family: Regular;
-  src: url(assets/fonts/Bebas-Regular.ttf);
+    font-family: Regular;
+    src: url(assets/fonts/Bebas-Regular.ttf);
 }
 
 @font-face {
-  font-family: FCText;
-  src: url(assets/fonts/Fancy\ Card\ Text.ttf);
+    font-family: FCText;
+    src: url(assets/fonts/Fancy\ Card\ Text.ttf);
 }
