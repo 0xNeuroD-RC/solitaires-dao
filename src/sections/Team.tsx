@@ -109,7 +109,7 @@ export const Team: React.FC<{}> = () => {
           <img className={classes.image} src={teamPlaceholder} alt="Artist" />
           <Link
             className={classes.link}
-            href="https://twitter.com/ru_cecillia"
+            href="https://twitter.com/SOLitairesNFT"
             target="_blank"
           >
             <Typography className={classes.name}>Ginsburg</Typography>{' '}
@@ -128,13 +128,13 @@ export const Team: React.FC<{}> = () => {
           >
             Lead Dev
           </Typography>
-          <img className={classes.image} src={teamPlaceholder} alt="0xNeuroD" />
+          <img className={classes.image} src={teamPlaceholder} alt="0xNewMoney" />
           <Link
             className={classes.link}
-            href="https://twitter.com/0xNeuroD"
+            href="https://twitter.com/SOLitairesNFT"
             target="_blank"
           >
-            <Typography className={classes.name}>0xMMelvin</Typography>{' '}
+            <Typography className={classes.name}>0xNewMoney</Typography>{' '}
             <Icon className="fab fa-twitter" />
           </Link>
         </Paper>
