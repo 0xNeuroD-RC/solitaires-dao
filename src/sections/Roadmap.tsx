@@ -96,24 +96,6 @@ export const Roadmap: React.FC<{}> = () => {
         <List>
           <ListItem>
             <ListItemIcon className={classes.listIcon}>
-              <i className="fas fa-money-bill fa-2x" />
-            </ListItemIcon>
-            <ListItemText primary="Creating a coin and staking Solitaires to receive the coin." />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon className={classes.listIcon}>
-              <i className="fas fa-cart-plus fa-2x" />
-            </ListItemIcon>
-            <ListItemText primary="Dedicated Solitaires Marketplace" />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon className={classes.listIcon}>
-              <i className="fas fa-restroom fa-2x" />
-            </ListItemIcon>
-            <ListItemText primary="Breeding" />
-          </ListItem>
-          <ListItem>
-            <ListItemIcon className={classes.listIcon}>
               <i className="fas fa-gamepad fa-2x" />
             </ListItemIcon>
             <ListItemText primary="Coin flip betting or other games" />
