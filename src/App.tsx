@@ -9,6 +9,7 @@ import { Footer } from './sections/Footer'
 import { Hero } from './sections/Hero'
 import { Roadmap } from './sections/Roadmap'
 import { Team } from './sections/Team'
+import { Splash } from './components/Splash'
 
 const theme = createTheme({
   palette: {
@@ -28,7 +29,8 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg">
+      <Splash />
+      {/* <Container maxWidth="lg">
         <Nav />
         <Hero />
 
@@ -39,7 +41,7 @@ const App = () => {
           <Team />
         </Container>
         <Footer />
-      </Container>
+      </Container> */}
     </ThemeProvider>
   )
 }
