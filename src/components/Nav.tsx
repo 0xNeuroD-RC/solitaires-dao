@@ -40,7 +40,7 @@ export const Nav: React.FC = () => {
       <Grid item>
         <Button
           className={classes.navButton}
-          href="https://solitaires-dao.com"
+          href="https://solitaires-mint.vercel.app"
           target="_blank"
         >
           Mint
