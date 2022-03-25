@@ -47,10 +47,6 @@ export const FAQ: React.FC<{}> = () => {
       answer: `The price of your Soltaire will be 0.88 ◎ at presale (for whitelisted addresses) and 0.88 ◎ when the mint is live.`
     },
     {
-      question: 'How many addresses are on the whitelist?',
-      answer: 'There will be 700 addresses whitelisted.'
-    },
-    {
       question: 'Where can I buy a Solitaire after the mint is over?',
       answer: 'We will be listing on Magic Eden shortly after the mint is over.'
     }

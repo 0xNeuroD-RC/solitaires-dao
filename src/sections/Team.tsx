@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
-import teamPlaceholder from '../assets/img/king-01.png'
+import teamPlaceholder from '../assets/img/king.png'
 import { SectionTitle } from '../components/SectionTitle'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -131,14 +131,14 @@ export const Team: React.FC<{}> = () => {
           <img
             className={classes.image}
             src={teamPlaceholder}
-            alt="0xMMelvin"
+            alt="SOLitairesNFT"
           />
           <Link
             className={classes.link}
-            href="https://twitter.com/0xMMelvin"
+            href="https://twitter.com/SOLitairesNFT"
             target="_blank"
           >
-            <Typography className={classes.name}>0xMMelvin</Typography>{' '}
+            <Typography className={classes.name}>0xNewMoney</Typography>{' '}
             <Icon className="fab fa-twitter" />
           </Link>
         </Paper>

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import {
   Typography,
   Link,
@@ -76,7 +76,10 @@ export const Footer: FC = () => {
 
       <Box className={classes.createdBy}>
         <Typography className={classes.createdBy} color={`primary`}>
-          Created by <Link href="https://twitter.com/0xMMelvin">0xMMelvin</Link>
+          Created by{' '}
+          <Link href="https://twitter.com/SOLitairesNFT">
+            0xNewMoney <i className={`fab fa-twitter`} />
+          </Link>
         </Typography>
       </Box>
     </Box>
